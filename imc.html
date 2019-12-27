@@ -2,19 +2,26 @@
 
 <script>
     function pulaLinha(){
-        document.write("<br>")
+        document.write("<br><hr><br>")
     }
     
     function mostra(frase){
-        document.write(frase);
+        document.write("<h2>Calcula IMC: </h2>")
+        document.write("<big>" + frase + "</big>");
         pulaLinha();
     }
     // calcula IMC
     // Detalhe que nessa função será recebido dois valores diferente da func MOSTRA.
+    // Melhorando a função de calcular IMC.
     function calculaIMC(peso,altura){
         var imc = peso / (altura * altura);
-        mostra("O IMC calculado é de: " + imc);
+        return imc // a variavel retornará o valor calculado
     }
-    calculaIMC(66,1.81);
-    
+
+    var imcAlexandre = calculaIMC(66,1.81);
+    var imcMercedes = calculaIMC(55,1.70);
+
+    mostra(imcAlexandre);
+    mostra(imcMercedes);
+
 </script>
