@@ -14,8 +14,7 @@
     // Detalhe que nessa função será recebido dois valores diferente da func MOSTRA.
     // Melhorando a função de calcular IMC.
     function calculaIMC(peso,altura){
-        var imc = peso / (altura * altura);
-        return imc // a variavel retornará o valor calculado
+        return peso / (altura * altura); // a funçãi irá retornar o valor calculado
     }
 
     var imcAlexandre = calculaIMC(66,1.81);
@@ -23,5 +22,7 @@
 
     mostra(imcAlexandre);
     mostra(imcMercedes);
+
+    document.write("A soma dos IMC's: " + (imcAlexandre + imcMercedes));
 
 </script>
