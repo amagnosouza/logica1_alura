@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+// alterar para pular duas linhas;
+// a adição do hr cria uma marcação entre a separação das linhas;
+function pulaLinha() {
+    document.write("<br><hr><br>");
+}
+
+function mostra(frase) {
+    document.write("<big>"+ frase +"</big>");
+    pulaLinha();
+}
+
+var ano = 2019;
+
+mostra("Eu nasci em :" + (ano - 27));
+mostra("João nasceu em :" + (ano - 33));
+mostra("Camila nasceu em :" + (ano - 36));
+
+
+</script>
