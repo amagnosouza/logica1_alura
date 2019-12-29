@@ -11,7 +11,7 @@
         pulaLinha();
     }
     function calculaIMC(peso,altura){
-        return peso / (altura * altura); // a funçãi irá retornar o valor calculado
+        return peso / (altura * altura); // a função irá retornar o valor calculado
     }
 
     var nome = prompt("Digite seu nome: ");
@@ -20,6 +20,25 @@
     
     var imc = calculaIMC(infoPeso,infoAltura);
     
-    document.write(nome + " Seu IMC calulado é: " + (imc));
+    mostra(nome + " Seu IMC calulado é: " + (imc));
 
+    if(imc < 18.5){
+        mostra("Você está magro");
+    }
+    
+    if(imc >= 18.5 && imc <= 24.9){
+        mostra("Você está normal");
+    }
+
+    if(imc >= 25.0 && imc <= 29.9){
+        mostra("Você está com sobrepeso");
+    }
+
+    if(imc >= 30 && imc <= 39.9){
+        mostra("Você está obeso");
+    }
+
+    if(imc > 40){
+        mostra("Você está com obesidade grave");
+    }
 </script>
