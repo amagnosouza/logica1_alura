@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha(){
+        document.write("<br><hr><br>")
+    }
+    
+    function mostra(frase){
+        document.write("<h2>Adivinha Numero: </h2>")
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+    }
+    // Criar um número aleatorio para o jogo.
+    var numeroSorteado = Math.round(Math.random() * 10);
+    //console.log(numeroSorteado);
+    var numeroDigitado = parseInt(prompt("Digite um número"));
+    
+    if(numeroDigitado == numeroSorteado){
+        mostra("Você acertou!!");
+    }else{
+        mostra("Você errou. O número sorteado foi: "+ numeroSorteado);
+    }
+
+</script>
