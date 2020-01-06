@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+    }
+
+    var tParentes = parseInt(prompt("Diga a quantidade de parentes: "));
+    var n = 1;
+    var totalIdades = 0; // essa variavel precisa ficar fora do while para não zerar em cada repetição.
+
+    while (n <= tParentes){
+        var idade = parseInt(prompt("Diga a idade do parente"));
+        totalIdades = totalIdades + idade;
+        n++;
+    }
+
+    mediaDasIdades = totalIdades / tParentes;
+    mostra ("A média das idades dos parentes é " + mediaDasIdades);
+    mostra ("FIM")
+</script>
